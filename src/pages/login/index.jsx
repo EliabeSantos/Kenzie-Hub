@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { TextField, Button } from "@material-ui/core";
+// import { TextField, Button } from "@material-ui/core";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import DefaultButton from "../../components/shared/buttons/defaultButton";
@@ -11,6 +11,7 @@ import {
   ButtonContainer,
   HDiv,
   ContainerContentForm,
+  TextFieldComponent,
 } from "./style";
 
 const Login = () => {
@@ -51,7 +52,7 @@ const Login = () => {
             <h1>Login</h1>
           </HDiv>
           <div>
-            <TextField
+            <TextFieldComponent
               margin="normal"
               label="Email"
               name="email"
@@ -61,13 +62,14 @@ const Login = () => {
             />
           </div>
           <div>
-            <TextField
+            <TextFieldComponent
               margin="normal"
               label="Senha"
               name="password"
               inputRef={register}
               error={!!errors.password}
               helperText={errors.password?.message}
+              color="#43c1d8"
             />
           </div>
 
@@ -78,6 +80,7 @@ const Login = () => {
               variant="contained"
               color="primary"
               type="submit"
+              value="Entrar"
             >
               Entrar
             </DefaultButton>
@@ -91,6 +94,7 @@ const Login = () => {
               color="primary"
               type="submit"
               onClick={() => history.push("/register/1")}
+              value="Se cadastrar"
             >
               Se cadastrar
             </DefaultButton>
