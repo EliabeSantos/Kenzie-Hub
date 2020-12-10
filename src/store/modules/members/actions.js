@@ -1,13 +1,13 @@
-import { GETUSERLIST, GETUSERSBYID, REGISTERUSER } from "./actionTypes";
+// import { GETUSERLIST, GETUSERSBYID, REGISTERUSER } from "./actionTypes";
 
-const getUserList = (list) => {
-  return { type: GETUSERLIST, list };
-};
+// const getUserList = (list) => {
+//   return { type: GETUSERLIST, list };
+// };
 
-const getUserById = (user) => {
-  return { type: GETUSERSBYID, user };
-};
+// const getUserById = (user) => {
+//   return { type: GETUSERSBYID, user };
+// };
 
-const registerUser = () => {
-  return { type: REGISTERUSER };
-};
+// const registerUser = () => {
+//   return { type: REGISTERUSER };
+// };
