@@ -6,7 +6,7 @@
     ".gitignore": false,
     "package.json": true,
     "package-lock.json": true,
-    "public": true,
+    "public": false,
     "react_app_readme.md": true,
     "README.md": true,
     "yarn.lock": true,
