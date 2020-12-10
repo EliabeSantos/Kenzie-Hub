@@ -10,16 +10,21 @@ export const TextFieldComponent = styled(TextField)`
   }
 `;
 
-export const Form = styled.form`
-  width: 60%;
-  height: 40%;
+export const ContainerHeaderForm = styled.div`
   text-align: center;
-  border: solid 0.5px #43c1d8;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8rem 0;
+  width: 24rem;
+  margin-bottom: 2rem;
+  /* background-color: aliceblue; */
+`;
+export const ContainerTextField = styled.div`
+  margin-bottom: 2rem;
+  width: 24rem;
+  /* background-color: aquamarine; */
+`;
+
+export const Form = styled.form`
+  text-align: center;
+  /* background-color: beige; */
 `;
 
 export const HDiv = styled.div`
@@ -30,21 +35,9 @@ export const HDiv = styled.div`
   border-radius: 1rem;
 `;
 
-export const ContainerForm = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  position: absolute;
-`;
-
 export const ButtonContainer = styled.div`
-  margin: 1rem 0;
-`;
-
-export const ContainerContentForm = styled.div`
+  width: 24rem;
+  margin-bottom: 1rem;
   text-align: center;
+  /* background-color: black; */
 `;

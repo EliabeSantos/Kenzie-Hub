@@ -1,13 +1,14 @@
 import { Switch, Route } from "react-router-dom";
 import Landing from "./pages/landing";
 import PageSucess from "./pages/pagesuccess";
-import Login from "./pages/login";
+// import Login from "./pages/login";
+import RegisterSecondary from "./pages/registerSecondary";
 
 const Routes = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <Login />
+        <RegisterSecondary />
       </Route>
       <Route exact path="/members">
         <h1>Em construção</h1>
@@ -21,9 +22,7 @@ const Routes = () => {
       <Route exact path="/landing-page">
         <PageSucess />
       </Route>
-      <Route exact path="/my-profile/edit">
-        
-      </Route>
+      <Route exact path="/my-profile/edit"></Route>
       <Route exact path="/my-profile"></Route>
     </Switch>
   );

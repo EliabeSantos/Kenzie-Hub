@@ -5,7 +5,7 @@ import * as yup from "yup";
 import { MdAddAPhoto } from "react-icons/md";
 import { Fab } from "@material-ui/core";
 import {
-  ContainerForm,
+  // ContainerForm,
   ContainerPersonIcon,
   ContainerTechs,
   ContainerTitle,
@@ -15,6 +15,7 @@ import {
   ContainerPersonPhoto,
   ContainerIcon,
 } from "./style";
+import ContainerForm from "../../components/forms/ContainerForm";
 import { Select, MenuItem, InputLabel, TextField } from "@material-ui/core";
 import DefaultButton from "../../components/shared/buttons/defaultButton";
 import { MaleavatarImage } from "../../helpers/getImages";

@@ -6,13 +6,14 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import DefaultButton from "../../components/shared/buttons/defaultButton";
 import {
-  Form,
-  ContainerForm,
+  ContainerHeaderForm,
   ButtonContainer,
   HDiv,
-  ContainerContentForm,
   TextFieldComponent,
+  ContainerTextField
 } from "./style";
+import ContainerForm from "../../components/forms/ContainerForm";
+import {AccessaccountImage} from "../../helpers/getImages"
 
 const Login = () => {
   const history = useHistory();
@@ -46,13 +47,17 @@ const Login = () => {
 
   return (
     <ContainerForm>
-      <Form onSubmit={handleSubmit(handleForm)}>
-        <ContainerContentForm>
+      <form onSubmit={handleSubmit(handleForm)}>
+          <ContainerHeaderForm>
           <HDiv>
             <h1>Login</h1>
           </HDiv>
-          <div>
+          <AccessaccountImage width="16rem"/>
+          </ContainerHeaderForm>
+
+          <ContainerTextField>
             <TextFieldComponent
+              fullWidth
               margin="normal"
               label="Email"
               name="email"
@@ -60,9 +65,11 @@ const Login = () => {
               error={!!errors.user}
               helperText={errors.user?.message}
             />
-          </div>
-          <div>
+          </ContainerTextField>
+
+          <ContainerTextField>
             <TextFieldComponent
+              fullWidth
               margin="normal"
               label="Senha"
               name="password"
@@ -71,7 +78,7 @@ const Login = () => {
               helperText={errors.password?.message}
               color="#43c1d8"
             />
-          </div>
+          </ContainerTextField>
 
           <ButtonContainer>
             <DefaultButton
@@ -99,8 +106,8 @@ const Login = () => {
               Se cadastrar
             </DefaultButton>
           </ButtonContainer>
-        </ContainerContentForm>
-      </Form>
+
+      </form>
     </ContainerForm>
   );
 };
