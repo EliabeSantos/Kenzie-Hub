@@ -12,12 +12,13 @@ const Members = () => {
   }, []);
   return (
     <>
-      {members.map(({ name, id, course_module }, index) => (
+      {members.map(({ name, id, course_module, avatar_url }, index) => (
         <CardHover
           key={index}
           name={name}
           id={id}
           course={course_module}
+          avatar={avatar_url}
         ></CardHover>
       ))}
     </>

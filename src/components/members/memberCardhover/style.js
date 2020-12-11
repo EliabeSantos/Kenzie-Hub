@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Egirl from "./placeholders/e-girl.png";
 
+
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,7 +25,7 @@ export const Body = styled.div`
 export const ProfileImage = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url(${Egirl});
+  background-image: url(${({avatar}) => avatar ? avatar:Egirl });
   background-size: cover;
 `;
 export const ImageFilter = styled.div`
