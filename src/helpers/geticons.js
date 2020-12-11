@@ -7,6 +7,7 @@ import Python from "../helpers/icons/icons8-python.svg";
 import Ruby from "../helpers/icons/icons8-ruby-programming-language.svg";
 import Typescript from "../helpers/icons/icons8-typescript.svg";
 import Vue from "../helpers/icons/icons8-vue-js.svg";
+import React from "../helpers/icons/icons8-react.svg";
 
 
 export const dictionaryIcons = [
@@ -14,6 +15,10 @@ export const dictionaryIcons = [
       name:"bootstrap ",
       img:Bootstrap,
   },
+  {
+    name:"React ",
+    img:React,
+},
   {
     name:"c++",
     img:Icons8c,
