@@ -64,6 +64,7 @@ const RegisterSeconddary = () => {
                   error={!!errors.avatar_url}
                   helperText={errors.avatar_url?.message}
                   type="file"
+                  
                 />
                 <FabComponent
                   color="primary"
