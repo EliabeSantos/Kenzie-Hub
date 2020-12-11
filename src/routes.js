@@ -7,6 +7,8 @@ import RegisterEssentials from "./pages/registerEssentials";
 import RegisterSecondary from "./pages/registerSecondary";
 import VisitingProfile from "./pages/visitingprofile";
 
+import CartProfileWork from "./components/shared/cardProfileWork";
+
 const Routes = () => {
   return (
     <Switch>
