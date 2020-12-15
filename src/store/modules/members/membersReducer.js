@@ -12,7 +12,7 @@ const membersReducer = (state = memberList, action) => {
             return { list: [...state.list, ...action.list], searchedMember: state.searchedMember };
 
         case GETUSERSBYID:
-            return { list: [...state.list], searchedMember: action.searchedMember };
+            return { list: [...state.list], searchedMember: action.user };
 
         default:
             return state;
